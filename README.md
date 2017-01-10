@@ -53,7 +53,7 @@ Here are some of the features that I plan on integrating into this project very 
 - [ ] Instantiate config settings into PushRegistry class in plugin's bootstrap.php
 - [ ] Integrate PushComponent with PushRegistry so that we can define the `push()` method:
 
-```
+```php
 class PushComponent {
     public function push($config_service_name: string, $push_opts: IPushOptions): IPushResult;
 }
@@ -61,7 +61,7 @@ class PushComponent {
 
 - [ ] Integrate PushBehavior with PushRegistry so that we can define the `push()` method:
 
-```
+```php
 class PushBehavior {
     public function push($config_service_name: string, $push_opts: IPushOptions): IPushResult;
 }
